@@ -62,13 +62,80 @@ select:-webkit-autofill:focus {
 /* *** CONTAINER *** */
 .container
 {
+  max-width: 600px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-
+button:hover{
+  opacity: 0.8;
+}
 /* ** MAIN CONTENT ** */
 .main-content
 {
+  padding-top: 200px;
   flex-grow: 1;
+}
+.shopping-app{
+  background-color:antiquewhite;
+  padding: 24px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.input{
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+.add-btn {
+  padding: 8px 14px;
+  width: 120px;
+  border: none;
+  border-radius: 4px;
+  background-color: burlywood;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-left: 24px;
+  cursor: pointer;
+}
+#list{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#list li {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 0 10px;
+  padding-right: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+li button{
+  display: block;
+}
+
+.done{
+  background-color: greenyellow!important;
+  color: #fff!important;
+  opacity: 0.8;
 }
